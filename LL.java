@@ -60,7 +60,13 @@ class LL {
             System.out.println("already null nothing to delete");
             return;
         }
-
+        Node secondlast = head;
+        Node lastNode = head.next;
+        while (lastNode.next != null){
+            lastNode = lastNode.next;
+            secondlast = secondlast.next;
+        }
+        secondlast.next = null;
     }
 
 
@@ -71,6 +77,12 @@ class LL {
         list.printlist();
 
         list.addlast("list");
+        list.printlist();
+
+        list.deleteFirst();
+        list.printlist();
+
+        list.deleteLast();
         list.printlist();
 
     }
