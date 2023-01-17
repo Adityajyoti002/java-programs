@@ -19,11 +19,4 @@ class Palindrome {
             }
         }
     }
-class FIBONACCI{
-    public static void main(String[] args) {
-        int n ;
-
-    }
-
-}
 
